@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklor_one=self.webpackChunklor_one||[]).push([[4824],{34824:(o,e,n)=>{n.r(e),n.d(e,{default:()=>d});const d={"plugin.description.long":"Tilf\xF8jer GraphQL endpoint med standard API metoder.","plugin.description.short":"Tilf\xF8jer GraphQL endpoint med standard API metoder.","plugin.name":"GraphQL"}}}]);

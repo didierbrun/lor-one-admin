@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklor_one=self.webpackChunklor_one||[]).push([[1576],{81576:(d,e,n)=>{n.r(e),n.d(e,{default:()=>o});const o={"plugin.description.long":"Agrega un endpoint GraphQL con m\xE9todos de API predeterminados.","plugin.description.short":"Agrega un endpoint GraphQL con m\xE9todos de API predeterminados.","plugin.name":"GraphQL"}}}]);

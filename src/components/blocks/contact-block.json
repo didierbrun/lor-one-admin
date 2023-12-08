@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_blocks_contact_blocks",
+  "info": {
+    "displayName": "ContactBlock",
+    "icon": "cube"
+  },
+  "options": {},
+  "attributes": {
+    "menu_link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.menu-link"
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.title",
+      "required": true
+    },
+    "contacts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.contact",
+      "required": true,
+      "min": 1,
+      "max": 2
+    }
+  }
+}

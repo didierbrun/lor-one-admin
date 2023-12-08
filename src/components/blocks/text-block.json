@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_blocks_text_blocks",
+  "info": {
+    "displayName": "TextBlock",
+    "icon": "cube",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.title",
+      "required": true
+    },
+    "text": {
+      "type": "text"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.link"
+    },
+    "menu_link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.menu-link"
+    }
+  }
+}

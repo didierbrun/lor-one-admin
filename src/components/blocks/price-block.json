@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_blocks_price_blocks",
+  "info": {
+    "displayName": "PriceBlock",
+    "icon": "cube",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "menu_link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.menu-link"
+    },
+    "prices": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.price",
+      "required": true,
+      "min": 1,
+      "max": 3
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.title",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_blocks_join_blocks",
+  "info": {
+    "displayName": "JoinBlock",
+    "icon": "cube",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "menu_link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.menu-link"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "text"
+    },
+    "title_case": {
+      "type": "string",
+      "required": true
+    },
+    "text_case": {
+      "type": "text"
+    },
+    "title_team": {
+      "type": "string",
+      "required": true
+    },
+    "text_team": {
+      "type": "text"
+    },
+    "case_link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.link"
+    },
+    "team_link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.link"
+    }
+  }
+}

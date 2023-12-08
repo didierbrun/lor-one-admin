@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_contents",
+  "info": {
+    "singularName": "home-content",
+    "pluralName": "home-contents",
+    "displayName": "HomeContent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.split-block",
+        "blocks.text-block",
+        "blocks.carousel-block",
+        "blocks.enum-block",
+        "blocks.join-block",
+        "blocks.price-block",
+        "blocks.contact-block"
+      ],
+      "required": true,
+      "min": 1
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.seo",
+      "required": true
+    }
+  }
+}

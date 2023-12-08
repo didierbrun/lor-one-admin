@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_navigation_menu_links",
+  "info": {
+    "displayName": "MenuLink",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

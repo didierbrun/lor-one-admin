@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_content_prices",
+  "info": {
+    "displayName": "price",
+    "icon": "file",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "string",
+      "required": true
+    },
+    "legend": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

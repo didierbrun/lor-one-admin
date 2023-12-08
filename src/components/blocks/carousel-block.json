@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_blocks_carousel_blocks",
+  "info": {
+    "displayName": "CarouselBlock",
+    "icon": "cube",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.title",
+      "required": true
+    },
+    "events": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.event",
+      "required": true,
+      "min": 1
+    },
+    "menu_link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.menu-link"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_content_events",
+  "info": {
+    "displayName": "event"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "bold_title": {
+      "type": "string",
+      "required": true
+    },
+    "date_title": {
+      "type": "string"
+    },
+    "photo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

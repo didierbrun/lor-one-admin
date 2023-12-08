@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_blocks_split_blocks",
+  "info": {
+    "displayName": "SplitBlock",
+    "description": "",
+    "icon": "cube"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "text"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "menu_link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.menu-link"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.link"
+    }
+  }
+}

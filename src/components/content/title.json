@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_content_titles",
+  "info": {
+    "displayName": "title",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "sub_title": {
+      "type": "string"
+    }
+  }
+}
