@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "news_contents",
+  "info": {
+    "singularName": "news-content",
+    "pluralName": "news-contents",
+    "displayName": "NewsContent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "content.title",
+      "required": true
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
+    }
+  }
+}

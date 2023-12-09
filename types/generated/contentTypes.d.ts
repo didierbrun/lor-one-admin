@@ -677,6 +677,37 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
+export interface ApiArticleArticle extends Schema.CollectionType {
+  collectionName: 'articles';
+  info: {
+    singularName: 'article';
+    pluralName: 'articles';
+    displayName: 'Article';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    text: Attribute.Blocks;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::article.article',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::article.article',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiFooterContentFooterContent extends Schema.SingleType {
   collectionName: 'footer_contents';
   info: {
@@ -760,6 +791,42 @@ export interface ApiHomeContentHomeContent extends Schema.SingleType {
   };
 }
 
+export interface ApiNewsContentNewsContent extends Schema.SingleType {
+  collectionName: 'news_contents';
+  info: {
+    singularName: 'news-content';
+    pluralName: 'news-contents';
+    displayName: 'NewsContent';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.Component<'content.title'> & Attribute.Required;
+    articles: Attribute.Relation<
+      'api::news-content.news-content',
+      'oneToMany',
+      'api::article.article'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::news-content.news-content',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::news-content.news-content',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiSettingSetting extends Schema.SingleType {
   collectionName: 'settings';
   info: {
@@ -805,8 +872,10 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::article.article': ApiArticleArticle;
       'api::footer-content.footer-content': ApiFooterContentFooterContent;
       'api::home-content.home-content': ApiHomeContentHomeContent;
+      'api::news-content.news-content': ApiNewsContentNewsContent;
       'api::setting.setting': ApiSettingSetting;
     }
   }
