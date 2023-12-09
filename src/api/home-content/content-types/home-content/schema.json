@@ -21,7 +21,8 @@
         "blocks.enum-block",
         "blocks.join-block",
         "blocks.price-block",
-        "blocks.contact-block"
+        "blocks.contact-block",
+        "blocks.page-block"
       ],
       "required": true,
       "min": 1

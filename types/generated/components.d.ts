@@ -75,6 +75,19 @@ export interface BlocksJoinBlock extends Schema.Component {
   };
 }
 
+export interface BlocksPageBlock extends Schema.Component {
+  collectionName: 'components_blocks_page_blocks';
+  info: {
+    displayName: 'PageBlock';
+    icon: 'cube';
+    description: '';
+  };
+  attributes: {
+    kind: Attribute.Enumeration<['news']> & Attribute.Required;
+    menu_link: Attribute.Component<'navigation.menu-link'> & Attribute.Required;
+  };
+}
+
 export interface BlocksPriceBlock extends Schema.Component {
   collectionName: 'components_blocks_price_blocks';
   info: {
@@ -237,6 +250,7 @@ declare module '@strapi/types' {
       'blocks.contact-block': BlocksContactBlock;
       'blocks.enum-block': BlocksEnumBlock;
       'blocks.join-block': BlocksJoinBlock;
+      'blocks.page-block': BlocksPageBlock;
       'blocks.price-block': BlocksPriceBlock;
       'blocks.split-block': BlocksSplitBlock;
       'blocks.text-block': BlocksTextBlock;

@@ -733,7 +733,8 @@ export interface ApiHomeContentHomeContent extends Schema.SingleType {
         'blocks.enum-block',
         'blocks.join-block',
         'blocks.price-block',
-        'blocks.contact-block'
+        'blocks.contact-block',
+        'blocks.page-block'
       ]
     > &
       Attribute.Required &

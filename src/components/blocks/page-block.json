@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_blocks_page_blocks",
+  "info": {
+    "displayName": "PageBlock",
+    "icon": "cube",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "kind": {
+      "type": "enumeration",
+      "enum": [
+        "news"
+      ],
+      "required": true
+    },
+    "menu_link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.menu-link",
+      "required": true
+    }
+  }
+}
